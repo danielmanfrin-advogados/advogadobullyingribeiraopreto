@@ -1,0 +1,56 @@
+{
+  "routes": [
+    {
+      "path": "/",
+      "title": "Orientação Jurídica sobre Bullying em Ribeirão Preto"
+    },
+    {
+      "path": "/servicos/orientacao-juridica-bullying/",
+      "title": "Orientação jurídica sobre bullying"
+    },
+    {
+      "path": "/servicos/bullying-no-ambiente-escolar/",
+      "title": "Bullying no ambiente escolar"
+    },
+    {
+      "path": "/servicos/orientacao-cyberbullying/",
+      "title": "Orientação sobre cyberbullying"
+    },
+    {
+      "path": "/bairros/centro/",
+      "title": "Bullying em Centro"
+    },
+    {
+      "path": "/bairros/jardim-botanico/",
+      "title": "Bullying em Jardim Botânico"
+    },
+    {
+      "path": "/bairros/nova-alianca/",
+      "title": "Bullying em Nova Aliança"
+    },
+    {
+      "path": "/bairros/vila-tiberio/",
+      "title": "Bullying em Vila Tibério"
+    },
+    {
+      "path": "/bairros/bonfim-paulista/",
+      "title": "Bullying em Bonfim Paulista"
+    },
+    {
+      "path": "/bairros/campos-eliseos/",
+      "title": "Bullying em Campos Elíseos"
+    },
+    {
+      "path": "/sobre/",
+      "title": "Sobre"
+    },
+    {
+      "path": "/perguntas-frequentes/",
+      "title": "Perguntas frequentes"
+    },
+    {
+      "path": "/politica-de-privacidade/",
+      "title": "Política de privacidade"
+    }
+  ]
+}

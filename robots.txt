@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://advogadobullyingribeiraopreto.vercel.app/sitemap.xml

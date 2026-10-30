@@ -1,0 +1,49 @@
+DOMINIO_BASE = https://advogadobullyingribeiraopreto.vercel.app
+
+SITE ESTÁTICO: advogadobullyingribeiraopreto
+
+Este projeto contém páginas HTML completas em português do Brasil para informações gerais sobre bullying e cyberbullying em Ribeirão Preto. Não é aconselhamento jurídico individual e não promete resultado. As chamadas do site foram mantidas informativas.
+
+ATENÇÃO ANTES DE PUBLICAR
+
+Confirme a identificação do profissional, número de inscrição e quaisquer títulos ou qualificações que pretenda divulgar. O texto não anuncia “especialista” porque não foi apresentada comprovação. Não invente endereço, CNPJ, equipe, avaliações ou resultados.
+
+As regras de publicidade da advocacia exigem caráter informativo, discrição e sobriedade e vedam captação indevida e mercantilização. O modelo de portal que encaminha contatos remunerados, assim como chamadas que induzam contratação, precisa ser analisado especificamente pelo profissional responsável e pela OAB/SP antes de colocar o site no ar. Este guia não é parecer jurídico. Referências oficiais: Provimento 205/2021, https://eticaedisciplina.oab.org.br/assets/docs/Provimento%20n.%20205.2021%20-%20Publicidade.pdf e informação institucional da OAB, https://www.oab.org.br/noticia/61196/marketing-juridico-como-fazer-publicidade-em-obediencia-ao-estatuto-da-oab.
+
+A política de privacidade precisa ser completada antes da publicação com a identificação do controlador, canal formal de privacidade, operadores envolvidos e critérios de retenção. O número de telefone foi fornecido para contato; confirme que pertence ao profissional e pode ser utilizado publicamente.
+
+1. TROCAR WHATSAPP E TELEFONE
+
+Abra `config.js` e edite os campos `whatsapp` e `telefone`, mantendo somente dígitos no formato 55 + DDD + número. Exemplo: 5516993234658. Todos os botões das páginas leem os números desse único arquivo. Faça um teste em ambiente de desenvolvimento antes de publicar.
+
+2. ATUALIZAR O SCRIPT DA PLANILHA
+
+Abra a planilha do Google e escolha Extensões > Apps Script. Apague o conteúdo existente, cole `apps-script/Code.gs` e salve. Execute a função `setup()` uma vez e autorize o script. Depois selecione Implantar > Gerenciar implantações > editar a implantação existente > Nova versão > Implantar. Configure o acesso como “Qualquer pessoa”. Ao editar a implantação existente, a URL /exec permanece a mesma. O endpoint indicado em `config.js` é o que foi fornecido junto ao prompt.
+
+A aba criada usa 19 colunas; a coluna E é Site, F é Botão e G é Posição. Para comparar cliques por site, escolha Inserir > Tabela dinâmica, selecione `Site` em Linhas e `Botão` em Valores com agregação por contagem. O enunciado mencionava “contagem de Ação”, mas o código fornecido nomeia essa coluna como “Botão”.
+
+O registro contém posição do botão, página, origem/referrer, UTMs, presença de gclid, tipo de aparelho, resolução de tela, idioma, texto pré-preenchido e um código aleatório de sessão. O site não solicita nome, e-mail ou CPF e não usa cookies de publicidade. O operador do endpoint pode receber metadados técnicos da requisição. Revise a política de privacidade com o controlador antes de publicar.
+
+3. DOMÍNIO, GITHUB E VERCEL
+
+O valor inicial do domínio está nesta primeira linha como `DOMINIO_BASE`. Antes da publicação com outro domínio, substitua a origem antiga nas tags canonical, Open Graph, Twitter, sitemap.xml, robots.txt, llms.txt e JSON-LD das páginas. O código é estático; trocar esta variável no texto do guia não altera automaticamente os HTML.
+
+Crie um repositório chamado `advogadobullyingribeiraopreto` e envie os arquivos desta pasta. Na Vercel, importe o repositório e selecione Framework Preset “Other”, Build Command `npm run build` e Output Directory `dist`. O `package.json` não tem dependências. Para preparar localmente sem gerar package-lock, use `npm install --package-lock=false` e depois `npm run build`. O diretório `dist` contém o site pronto para hospedagem estática.
+
+4. GOOGLE SEARCH CONSOLE
+
+Adicione o domínio ou prefixo de URL no Google Search Console, conclua a verificação solicitada pela ferramenta e envie o sitemap em `https://advogadobullyingribeiraopreto.vercel.app/sitemap.xml` (ou no endereço final do domínio). A inclusão do sitemap não garante posição ou indexação.
+
+5. IMAGENS
+
+Os JPGs em `img/` são ilustrações genéricas e não representam o profissional, uma equipe, escritório ou veículo. Quando houver fotos próprias autorizadas, substitua `hero.jpg`, `sobre.jpg` e os arquivos com os slugs dos três temas, sem mudar os nomes. As imagens fora da primeira dobra usam carregamento tardio.
+
+6. PERFIL DE EMPRESA NO GOOGLE
+
+Crie um Perfil da Empresa no Google somente se o profissional atender aos requisitos da plataforma e tiver endereço real elegível. Não use endereço fictício, endereço de terceiros sem autorização ou dados de local inventados.
+
+7. PÁGINAS DO PROJETO
+
+As páginas públicas são: inicial; três páginas de temas; seis páginas por bairro; Sobre; Perguntas frequentes; Política de privacidade. O arquivo `manus-routes.json` é um manifesto técnico da prévia Manus. `plan.md` e `TODO.md` são notas de desenvolvimento e ficam fora da saída publicada pelo build.
+
+Data de atualização deste guia: 30 de outubro de 2026.
