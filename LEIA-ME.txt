@@ -10,15 +10,15 @@ Confirme a identificação do profissional, número de inscrição e quaisquer t
 
 As regras de publicidade da advocacia exigem caráter informativo, discrição e sobriedade e vedam captação indevida e mercantilização. O objetivo informado do site inclui captar contatos para o profissional. O responsável deve avaliar se a estrutura, a forma de encaminhamento (inclusive eventual remuneração) e as chamadas são compatíveis com as regras de publicidade da advocacia, em especial o Provimento 205/2021, antes de colocar o site no ar. Recomenda-se revisão pelo profissional e consulta à OAB/SP. Este guia não é parecer jurídico. Referências oficiais: Provimento 205/2021, https://eticaedisciplina.oab.org.br/assets/docs/Provimento%20n.%20205.2021%20-%20Publicidade.pdf e informação institucional da OAB, https://www.oab.org.br/noticia/61196/marketing-juridico-como-fazer-publicidade-em-obediencia-ao-estatuto-da-oab.
 
-Por solicitação do responsável, o projeto foi preparado sem a página de política e sem rastreamento de cliques. Os links abrem diretamente WhatsApp ou telefone; o site não envia dados de visita para planilha ou Apps Script. Se analytics forem reintroduzidos, revise a transparência e as configurações antes da publicação. O número informado deve ser confirmado como contato que pode ser divulgado publicamente.
+Por solicitação atual do responsável, os cliques em WhatsApp ou telefone voltaram a ser registrados com os campos mínimos descritos na página `/politica-de-privacidade/`. A política está ligada nos rodapés. O número informado deve ser confirmado como contato que pode ser divulgado publicamente.
 
 1. TROCAR WHATSAPP E TELEFONE
 
 Abra `config.js` e edite os campos `whatsapp` e `telefone`, mantendo somente dígitos no formato 55 + DDD + número. Exemplo: 5516993234658. Todos os botões das páginas leem os números desse único arquivo. Faça um teste em ambiente de desenvolvimento antes de publicar.
 
-2. CONTATO SEM RASTREAMENTO
+2. CONTATO E REGISTRO MÍNIMO DE CLIQUES
 
-Os links de contato abrem WhatsApp ou telefone. O site não usa `tracker.js`, não chama endpoint de analytics e não registra cliques em planilha. O arquivo `contact.js` apenas aplica o número configurado e monta a mensagem do seletor rápido no navegador; não envia eventos. Não reative o Google Apps Script ou um endpoint de cliques sem revisar o tratamento e a transparência aplicável.
+`contact.js` aplica os números e prepara a mensagem do seletor rápido no navegador. `tracker.js` registra um evento somente quando a pessoa clica em WhatsApp ou telefone. O navegador envia ao endpoint já implantado no Google Apps Script somente `site`, `acao` (botão), `local` (posição), `pagina` (caminho sem query) e `origem` (domínio de referência, sem caminho ou parâmetros; ou “direto”). O Apps Script gera `Data e hora`, `Dia`, `Hora` e `Dia da semana`. Assim, os nove campos preenchidos na planilha são: Data e hora, Dia, Hora, Dia da semana, Site, Botão, Posição, Página e Origem. Não são enviados nome, e-mail, CPF, conteúdo da mensagem, campanha, termo de busca, identificador de sessão, tela ou idioma. O controlador informou que somente ele tem acesso à planilha; mantenha e revise as permissões dessa forma. O script de cliques não tem exclusão automática; as linhas permanecem até serem removidas na planilha. A finalidade e os direitos do titular estão descritos em `/politica-de-privacidade/`. A hospedagem Vercel e a infraestrutura Google podem processar dados técnicos conforme as próprias políticas, independentemente das colunas registradas na planilha.
 
 3. DOMÍNIO, GITHUB E VERCEL
 
@@ -42,7 +42,7 @@ Crie um Perfil da Empresa no Google somente se o profissional atender aos requis
 
 7. PÁGINAS DO PROJETO
 
-As páginas públicas são: inicial; três páginas de temas; nove páginas por bairro/região; Sobre; Perguntas frequentes (15 páginas ao todo). Não há página de política de privacidade nesta versão, por solicitação do responsável. O arquivo `manus-routes.json` é um manifesto técnico da prévia Manus. `plan.md` e `TODO.md` são notas de desenvolvimento e ficam fora da saída publicada pelo build.
+As páginas públicas são: inicial; três páginas de temas; nove páginas por bairro/região; Sobre; Perguntas frequentes; Política de privacidade (16 páginas ao todo). O arquivo `manus-routes.json` é um manifesto técnico da prévia Manus. `plan.md` e `TODO.md` são notas de desenvolvimento e ficam fora da saída publicada pelo build.
 
 O conteúdo local usa localidades como referências informativas, sem apontar escola ou presumir ocorrência. As novas rotas incluem Jardim Irajá, Jardim Paulista e Zona Sul.
 

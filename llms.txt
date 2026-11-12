@@ -40,3 +40,6 @@ Descreva brevemente a situação pelo WhatsApp ou telefone e pergunte ao profiss
 
 ## Referência de localidades
 - [Lista municipal de escolas particulares autorizadas de Educação Infantil](https://www.ribeiraopreto.sp.gov.br/portal/educacao/escolas-infantil-particulares-autorizadas) — fonte territorial para Jardim Irajá e Jardim Paulista; não indica ocorrência nem vínculo com o portal.
+
+## Privacidade
+- [Política de privacidade e registro de cliques](https://advogadobullyingribeiraopreto.vercel.app/politica-de-privacidade/): dados mínimos enviados após cliques em WhatsApp ou telefone.
