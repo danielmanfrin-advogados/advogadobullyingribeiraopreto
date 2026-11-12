@@ -2,55 +2,63 @@
   "routes": [
     {
       "path": "/",
-      "title": "Orientação Jurídica sobre Bullying em Ribeirão Preto"
+      "title": "Advogado contra Bullying nas escolas"
     },
     {
       "path": "/servicos/orientacao-juridica-bullying/",
-      "title": "Orientação jurídica sobre bullying"
+      "title": "Orientação sobre bullying escolar | Ribeirão Preto"
     },
     {
       "path": "/servicos/bullying-no-ambiente-escolar/",
-      "title": "Bullying no ambiente escolar"
+      "title": "Bullying no ambiente escolar | Ribeirão Preto"
     },
     {
       "path": "/servicos/orientacao-cyberbullying/",
-      "title": "Orientação sobre cyberbullying"
+      "title": "Cyberbullying entre estudantes | Ribeirão Preto"
     },
     {
       "path": "/bairros/centro/",
-      "title": "Bullying em Centro"
+      "title": "Bullying escolar no Centro | Ribeirão Preto"
     },
     {
       "path": "/bairros/jardim-botanico/",
-      "title": "Bullying em Jardim Botânico"
+      "title": "Bullying escolar no Jardim Botânico | Ribeirão Preto"
     },
     {
       "path": "/bairros/nova-alianca/",
-      "title": "Bullying em Nova Aliança"
+      "title": "Bullying escolar no Jardim Nova Aliança | Ribeirão Preto"
     },
     {
       "path": "/bairros/vila-tiberio/",
-      "title": "Bullying em Vila Tibério"
+      "title": "Bullying escolar na Vila Tibério | Ribeirão Preto"
     },
     {
       "path": "/bairros/bonfim-paulista/",
-      "title": "Bullying em Bonfim Paulista"
+      "title": "Bullying escolar em Bonfim Paulista | Ribeirão Preto"
     },
     {
       "path": "/bairros/campos-eliseos/",
-      "title": "Bullying em Campos Elíseos"
+      "title": "Bullying escolar em Campos Elíseos | Ribeirão Preto"
+    },
+    {
+      "path": "/bairros/jardim-iraja/",
+      "title": "Bullying escolar no Jardim Irajá | Ribeirão Preto"
+    },
+    {
+      "path": "/bairros/jardim-paulista/",
+      "title": "Bullying escolar no Jardim Paulista | Ribeirão Preto"
+    },
+    {
+      "path": "/bairros/zona-sul/",
+      "title": "Bullying escolar na Zona Sul | Ribeirão Preto"
     },
     {
       "path": "/sobre/",
-      "title": "Sobre"
+      "title": "Sobre o portal de bullying escolar | Ribeirão Preto"
     },
     {
       "path": "/perguntas-frequentes/",
-      "title": "Perguntas frequentes"
-    },
-    {
-      "path": "/politica-de-privacidade/",
-      "title": "Política de privacidade"
+      "title": "Perguntas sobre bullying escolar | Ribeirão Preto"
     }
   ]
 }

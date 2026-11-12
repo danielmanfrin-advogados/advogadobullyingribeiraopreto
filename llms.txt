@@ -1,37 +1,42 @@
-# Advogado para Bullying em Ribeirão Preto
-
-Conteúdo informativo sobre bullying e cyberbullying e canais para contato inicial em Ribeirão Preto, SP. A análise de situações individuais depende de conversa profissional.
+# Advogado contra Bullying nas escolas
+Conteúdo informativo sobre bullying em escolas e cyberbullying entre estudantes, com canais para contato inicial em Ribeirão Preto, SP. A análise de situações individuais depende de conversa profissional.
 
 ## Temas
-- [Orientação jurídica sobre bullying](https://advogadobullyingribeiraopreto.vercel.app/servicos/orientacao-juridica-bullying/) — Esta página reúne informações gerais para organizar uma conversa sobre uma situação de bullying. O enquadramento jurídico e os caminhos possíveis dependem do contexto, das pessoas envolvidas e das informações disponíveis.
-- [Bullying no ambiente escolar](https://advogadobullyingribeiraopreto.vercel.app/servicos/bullying-no-ambiente-escolar/) — Situações entre estudantes podem envolver episódios repetidos, exclusão, apelidos, ameaças ou conflitos pontuais. Relatar o que ocorreu sem concluir antecipadamente permite que o profissional compreenda melhor o contexto.
-- [Orientação sobre cyberbullying](https://advogadobullyingribeiraopreto.vercel.app/servicos/orientacao-cyberbullying/) — Uma situação digital pode incluir mensagens, publicações, imagens ou interações em grupos. A conversa inicial pode começar com uma descrição breve, sem divulgar publicamente conteúdos ou dados de crianças e adolescentes.
+- [Orientação sobre bullying escolar](https://advogadobullyingribeiraopreto.vercel.app/servicos/orientacao-juridica-bullying/) — Informações gerais para organizar uma conversa sobre bullying em escola, sem presumir enquadramento jurídico ou resultado.
+- [Bullying no ambiente escolar](https://advogadobullyingribeiraopreto.vercel.app/servicos/bullying-no-ambiente-escolar/) — Como organizar uma descrição de fatos e proteger dados de estudantes em situações escolares.
+- [Cyberbullying entre estudantes](https://advogadobullyingribeiraopreto.vercel.app/servicos/orientacao-cyberbullying/) — Informações sobre situações digitais relacionadas à convivência escolar e preservação de registros.
 
-## Bairros
-- [Bullying em Centro](https://advogadobullyingribeiraopreto.vercel.app/bairros/centro/)
-- [Bullying em Jardim Botânico](https://advogadobullyingribeiraopreto.vercel.app/bairros/jardim-botanico/)
-- [Bullying em Nova Aliança](https://advogadobullyingribeiraopreto.vercel.app/bairros/nova-alianca/)
-- [Bullying em Vila Tibério](https://advogadobullyingribeiraopreto.vercel.app/bairros/vila-tiberio/)
-- [Bullying em Bonfim Paulista](https://advogadobullyingribeiraopreto.vercel.app/bairros/bonfim-paulista/)
-- [Bullying em Campos Elíseos](https://advogadobullyingribeiraopreto.vercel.app/bairros/campos-eliseos/)
+## Bairros e regiões
+- [Bullying em escolas no Centro de Ribeirão Preto](https://advogadobullyingribeiraopreto.vercel.app/bairros/centro/) — Conteúdo geral; a página não relata caso local nem identifica escola.
+- [Bullying em escola no Jardim Botânico, Ribeirão Preto](https://advogadobullyingribeiraopreto.vercel.app/bairros/jardim-botanico/) — Conteúdo geral; a página não relata caso local nem identifica escola.
+- [Bullying em escolas no Jardim Nova Aliança, Ribeirão Preto](https://advogadobullyingribeiraopreto.vercel.app/bairros/nova-alianca/) — Conteúdo geral; a página não relata caso local nem identifica escola.
+- [Bullying em escolas na Vila Tibério, Ribeirão Preto](https://advogadobullyingribeiraopreto.vercel.app/bairros/vila-tiberio/) — Conteúdo geral; a página não relata caso local nem identifica escola.
+- [Bullying em escolas em Bonfim Paulista, Ribeirão Preto](https://advogadobullyingribeiraopreto.vercel.app/bairros/bonfim-paulista/) — Conteúdo geral; a página não relata caso local nem identifica escola.
+- [Bullying em escolas em Campos Elíseos, Ribeirão Preto](https://advogadobullyingribeiraopreto.vercel.app/bairros/campos-eliseos/) — Conteúdo geral; a página não relata caso local nem identifica escola.
+- [Bullying em escola no Jardim Irajá, Ribeirão Preto](https://advogadobullyingribeiraopreto.vercel.app/bairros/jardim-iraja/) — Conteúdo geral; a página não relata caso local nem identifica escola.
+- [Bullying em escolas no Jardim Paulista, Ribeirão Preto](https://advogadobullyingribeiraopreto.vercel.app/bairros/jardim-paulista/) — Conteúdo geral; a página não relata caso local nem identifica escola.
+- [Bullying em escolas na Zona Sul de Ribeirão Preto](https://advogadobullyingribeiraopreto.vercel.app/bairros/zona-sul/) — Conteúdo geral; a página não relata caso local nem identifica escola.
 
 ## Páginas institucionais
 - [Sobre](https://advogadobullyingribeiraopreto.vercel.app/sobre/)
 - [Perguntas frequentes](https://advogadobullyingribeiraopreto.vercel.app/perguntas-frequentes/)
-- [Política de privacidade](https://advogadobullyingribeiraopreto.vercel.app/politica-de-privacidade/)
+
+## Referências externas
+- [Site oficial de Daniel Manfrin](https://www.danielmanfrin.adv.br/)
+- [Lei nº 13.185/2015 — Planalto](https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13185.htm)
+- [Lei nº 14.811/2024 — Planalto](https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2024/lei/l14811.htm)
 
 ## Perguntas e respostas
-### O que é bullying?
-Na linguagem comum, bullying descreve um padrão de intimidação ou agressões repetidas. Para uma análise jurídica, importam os fatos concretos, o contexto, as pessoas envolvidas e as regras aplicáveis.
-
-### Cyberbullying é diferente de um conflito online?
-Cyberbullying costuma se referir a intimidação praticada por meios digitais. Uma discussão isolada e uma conduta repetida podem exigir avaliações diferentes; a classificação depende do contexto e dos elementos disponíveis.
-
-### Que informações devo organizar antes do contato?
-Anote datas aproximadas, onde ocorreu, o que aconteceu e quais providências já foram tomadas. Se houver mensagens, links ou imagens relevantes, preserve os registros sem alterá-los nem divulgá-los publicamente.
-
-### O que fazer se uma criança ou adolescente estiver em risco?
-Priorize a segurança e procure um adulto responsável e os canais adequados de proteção. Se houver perigo imediato, busque ajuda de emergência ou do órgão competente. A medida apropriada depende da situação.
-
-### Como obter informações sobre honorários e condições?
+### O que pode ser considerado bullying no contexto escolar?
+A expressão costuma descrever condutas de intimidação ou agressão repetidas no ambiente escolar. A avaliação jurídica depende dos fatos, do contexto, das pessoas envolvidas e das regras aplicáveis; um relato isolado não permite conclusão automática.
+### Cyberbullying entre estudantes é diferente de um conflito online?
+Cyberbullying pode envolver mensagens, publicações ou grupos digitais relacionados à convivência entre estudantes. Uma discussão isolada e uma conduta repetida podem exigir avaliações diferentes; a classificação depende do conteúdo e do contexto.
+### O que devo organizar antes de conversar sobre bullying em uma escola?
+Anote datas aproximadas, o que ocorreu, onde, se houve repetição e quais providências foram tentadas. Separe observações diretas de relatos de terceiros e preserve mensagens ou links sem divulgá-los publicamente.
+### O que fazer se uma criança ou adolescente estiver em risco na escola?
+Priorize a segurança e procure um adulto responsável e os canais adequados de proteção. Se houver perigo imediato, procure o serviço de emergência competente; não espere por uma análise deste site ou por uma resposta em mensagem.
+### Como obter informações sobre honorários e condições de uma orientação?
 Descreva brevemente a situação pelo WhatsApp ou telefone e pergunte ao profissional que atender sobre os honorários e as condições aplicáveis. Este site não publica valores, oferece estimativas ou garante contratação ou resultado.
+
+## Referência de localidades
+- [Lista municipal de escolas particulares autorizadas de Educação Infantil](https://www.ribeiraopreto.sp.gov.br/portal/educacao/escolas-infantil-particulares-autorizadas) — fonte territorial para Jardim Irajá e Jardim Paulista; não indica ocorrência nem vínculo com o portal.

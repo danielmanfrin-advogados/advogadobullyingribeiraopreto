@@ -2,37 +2,35 @@ DOMINIO_BASE = https://advogadobullyingribeiraopreto.vercel.app
 
 SITE ESTÁTICO: advogadobullyingribeiraopreto
 
-Este projeto contém páginas HTML completas em português do Brasil para informações gerais sobre bullying e cyberbullying em Ribeirão Preto. Não é aconselhamento jurídico individual e não promete resultado. As chamadas do site foram mantidas informativas.
+Este projeto contém páginas HTML completas em português do Brasil para informações gerais sobre bullying em escolas e cyberbullying entre estudantes em Ribeirão Preto. Não é aconselhamento jurídico individual e não promete resultado. As chamadas do site foram mantidas informativas.
 
 ATENÇÃO ANTES DE PUBLICAR
 
-Confirme a identificação do profissional, número de inscrição e quaisquer títulos ou qualificações que pretenda divulgar. O texto não anuncia “especialista” porque não foi apresentada comprovação. Não invente endereço, CNPJ, equipe, avaliações ou resultados.
+Confirme a identificação do profissional, número de inscrição e quaisquer títulos ou qualificações que pretenda divulgar. Este portal não deve copiar alegações, métricas ou qualificações de outro domínio sem confirmação independente. Não invente endereço, CNPJ, equipe, avaliações ou resultados. O site profissional indicado para referência é https://www.danielmanfrin.adv.br/.
 
-As regras de publicidade da advocacia exigem caráter informativo, discrição e sobriedade e vedam captação indevida e mercantilização. O modelo de portal que encaminha contatos remunerados, assim como chamadas que induzam contratação, precisa ser analisado especificamente pelo profissional responsável e pela OAB/SP antes de colocar o site no ar. Este guia não é parecer jurídico. Referências oficiais: Provimento 205/2021, https://eticaedisciplina.oab.org.br/assets/docs/Provimento%20n.%20205.2021%20-%20Publicidade.pdf e informação institucional da OAB, https://www.oab.org.br/noticia/61196/marketing-juridico-como-fazer-publicidade-em-obediencia-ao-estatuto-da-oab.
+As regras de publicidade da advocacia exigem caráter informativo, discrição e sobriedade e vedam captação indevida e mercantilização. O objetivo informado do site inclui captar contatos para o profissional. O responsável deve avaliar se a estrutura, a forma de encaminhamento (inclusive eventual remuneração) e as chamadas são compatíveis com as regras de publicidade da advocacia, em especial o Provimento 205/2021, antes de colocar o site no ar. Recomenda-se revisão pelo profissional e consulta à OAB/SP. Este guia não é parecer jurídico. Referências oficiais: Provimento 205/2021, https://eticaedisciplina.oab.org.br/assets/docs/Provimento%20n.%20205.2021%20-%20Publicidade.pdf e informação institucional da OAB, https://www.oab.org.br/noticia/61196/marketing-juridico-como-fazer-publicidade-em-obediencia-ao-estatuto-da-oab.
 
-A política de privacidade precisa ser completada antes da publicação com a identificação do controlador, canal formal de privacidade, operadores envolvidos e critérios de retenção. O número de telefone foi fornecido para contato; confirme que pertence ao profissional e pode ser utilizado publicamente.
+Por solicitação do responsável, o projeto foi preparado sem a página de política e sem rastreamento de cliques. Os links abrem diretamente WhatsApp ou telefone; o site não envia dados de visita para planilha ou Apps Script. Se analytics forem reintroduzidos, revise a transparência e as configurações antes da publicação. O número informado deve ser confirmado como contato que pode ser divulgado publicamente.
 
 1. TROCAR WHATSAPP E TELEFONE
 
 Abra `config.js` e edite os campos `whatsapp` e `telefone`, mantendo somente dígitos no formato 55 + DDD + número. Exemplo: 5516993234658. Todos os botões das páginas leem os números desse único arquivo. Faça um teste em ambiente de desenvolvimento antes de publicar.
 
-2. ATUALIZAR O SCRIPT DA PLANILHA
+2. CONTATO SEM RASTREAMENTO
 
-Abra a planilha do Google e escolha Extensões > Apps Script. Apague o conteúdo existente, cole `apps-script/Code.gs` e salve. Execute a função `setup()` uma vez e autorize o script. Depois selecione Implantar > Gerenciar implantações > editar a implantação existente > Nova versão > Implantar. Configure o acesso como “Qualquer pessoa”. Ao editar a implantação existente, a URL /exec permanece a mesma. O endpoint indicado em `config.js` é o que foi fornecido junto ao prompt.
-
-A aba criada usa 19 colunas; a coluna E é Site, F é Botão e G é Posição. Para comparar cliques por site, escolha Inserir > Tabela dinâmica, selecione `Site` em Linhas e `Botão` em Valores com agregação por contagem. O enunciado mencionava “contagem de Ação”, mas o código fornecido nomeia essa coluna como “Botão”.
-
-O registro contém posição do botão, página, origem/referrer, UTMs, presença de gclid, tipo de aparelho, resolução de tela, idioma, texto pré-preenchido e um código aleatório de sessão. O site não solicita nome, e-mail ou CPF e não usa cookies de publicidade. O operador do endpoint pode receber metadados técnicos da requisição. Revise a política de privacidade com o controlador antes de publicar.
+Os links de contato abrem WhatsApp ou telefone. O site não usa `tracker.js`, não chama endpoint de analytics e não registra cliques em planilha. O arquivo `contact.js` apenas aplica o número configurado e monta a mensagem do seletor rápido no navegador; não envia eventos. Não reative o Google Apps Script ou um endpoint de cliques sem revisar o tratamento e a transparência aplicável.
 
 3. DOMÍNIO, GITHUB E VERCEL
 
 O valor inicial do domínio está nesta primeira linha como `DOMINIO_BASE`. Antes da publicação com outro domínio, substitua a origem antiga nas tags canonical, Open Graph, Twitter, sitemap.xml, robots.txt, llms.txt e JSON-LD das páginas. O código é estático; trocar esta variável no texto do guia não altera automaticamente os HTML.
 
-Crie um repositório chamado `advogadobullyingribeiraopreto` e envie os arquivos desta pasta. Na Vercel, importe o repositório e selecione Framework Preset “Other”, Build Command `npm run build` e Output Directory `dist`. O `package.json` não tem dependências. Para preparar localmente sem gerar package-lock, use `npm install --package-lock=false` e depois `npm run build`. O diretório `dist` contém o site pronto para hospedagem estática.
+O código já está no GitHub: https://github.com/danielmanfrin-advogados/advogadobullyingribeiraopreto, branch `main`. Para futuras alterações, edite os HTML na raiz ou na pasta da página correspondente; não edite `dist`, que é gerado. Se criar ou renomear uma página, atualize também canonical/OG/Twitter, `sitemap.xml`, `llms.txt`, `manus-routes.json` e dados estruturados pertinentes. Rode `npm run build` e confira `dist`; depois faça commit e push para `main` (por exemplo: `git add -A`, `git commit -m "Atualiza conteúdo do site"`, `git push origin main`). Se a Vercel estiver conectada a este repositório e `main` for a branch de produção, o push inicia uma implantação; acompanhe o resultado no painel da Vercel. Use Framework Preset “Other”, Build Command `npm run build` e Output Directory `dist`. O `package.json` não tem dependências.
 
 4. GOOGLE SEARCH CONSOLE
 
 Adicione o domínio ou prefixo de URL no Google Search Console, conclua a verificação solicitada pela ferramenta e envie o sitemap em `https://advogadobullyingribeiraopreto.vercel.app/sitemap.xml` (ou no endereço final do domínio). A inclusão do sitemap não garante posição ou indexação.
+
+O nome da home está indicado como “Advogado contra Bullying nas escolas” no `WebSite` JSON-LD, em `og:site_name` e no título da página. O Google escolhe automaticamente o nome do site e o título exibido, e pode mostrar outro texto. Depois que a versão for publicada, inspecione a home no Search Console e solicite novo rastreamento; a atualização pode levar dias ou semanas. Consulte a documentação oficial: https://developers.google.com/search/docs/appearance/site-names e https://developers.google.com/search/docs/appearance/title-link.
 
 5. IMAGENS
 
@@ -44,6 +42,8 @@ Crie um Perfil da Empresa no Google somente se o profissional atender aos requis
 
 7. PÁGINAS DO PROJETO
 
-As páginas públicas são: inicial; três páginas de temas; seis páginas por bairro; Sobre; Perguntas frequentes; Política de privacidade. O arquivo `manus-routes.json` é um manifesto técnico da prévia Manus. `plan.md` e `TODO.md` são notas de desenvolvimento e ficam fora da saída publicada pelo build.
+As páginas públicas são: inicial; três páginas de temas; nove páginas por bairro/região; Sobre; Perguntas frequentes (15 páginas ao todo). Não há página de política de privacidade nesta versão, por solicitação do responsável. O arquivo `manus-routes.json` é um manifesto técnico da prévia Manus. `plan.md` e `TODO.md` são notas de desenvolvimento e ficam fora da saída publicada pelo build.
 
-Data de atualização deste guia: 30 de outubro de 2026.
+O conteúdo local usa localidades como referências informativas, sem apontar escola ou presumir ocorrência. As novas rotas incluem Jardim Irajá, Jardim Paulista e Zona Sul.
+
+Data de atualização deste guia: 12 de novembro de 2026.
